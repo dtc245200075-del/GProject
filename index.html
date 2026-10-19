@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout - Responsive Web Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Header</h1>
+            <p class="header-desc">Bố cục trang web Responsive bằng CSS Flexbox</p>
+        </header>
+
+        <nav class="nav">
+            <span class="nav-title">Navigation:</span>
+            <a href="#home">Trang chủ</a>
+            <a href="#about">Giới thiệu</a>
+            <a href="#services">Dịch vụ</a>
+            <a href="#blog">Bài viết</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+
+        <div class="main-container">
+            <main class="content">
+                <h2>Main Content</h2>
+                <span class="badge badge-content">flex: 3</span>
+                <p>Khu vực hiển thị nội dung chính của trang web. Khi ở chế độ Desktop, khu vực này chiếm 3 phần độ rộng của khung chứa <code>main-container</code>.</p>
+                
+                <div class="article-box">
+                    <h3>Ưu điểm của CSS Flexbox trong Responsive Layout:</h3>
+                    <ul>
+                        <li><strong>Dễ dàng căn chỉnh:</strong> Linh hoạt xếp các phần tử theo hàng (row) hoặc cột (column).</li>
+                        <li><strong>Tự động co giãn:</strong> Các thuộc tính <code>flex: 3</code> và <code>flex: 1</code> giúp phân chia tỷ lệ vàng 75% - 25% trực quan và chuẩn xác.</li>
+                        <li><strong>Responsive tức thì:</strong> Sử dụng Media Query kết hợp <code>flex-direction: column</code> cho thiết bị di động (màn hình &le; 768px).</li>
+                    </ul>
+                </div>
+            </main>
+
+            <aside class="sidebar">
+                <h3>Sidebar</h3>
+                <span class="badge badge-sidebar">flex: 1</span>
+                <p>Khu vực nội dung phụ, chứa các thông tin bổ sung, tin mới hoặc quảng cáo.</p>
+                <div class="sidebar-widget">
+                    <h4>📌 Tin tức mới</h4>
+                    <p>Khám phá các kỹ thuật dàn trang CSS hiện đại.</p>
+                </div>
+                <div class="sidebar-widget">
+                    <h4>📱 Chế độ Responsive</h4>
+                    <p>Màn hình &le; 768px: Sidebar sẽ tự động chuyển xuống bên dưới Content.</p>
+                </div>
+            </aside>
+        </div>
+
+        <footer class="footer">
+            <p>Footer</p>
+            <small>&copy; 2026 Responsive Web Layout với CSS Flexbox | Thiết kế tối ưu cho Desktop & Mobile</small>
+        </footer>
+    </div>
+</body>
+</html>
